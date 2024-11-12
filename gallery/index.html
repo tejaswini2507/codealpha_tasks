@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="icon" href="picture.png">
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> IMAGE   GALLERY</h1>
+    <div class="firstimages">
+      
+        <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?car=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(0)">
+        <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(1)">
+        <img src="https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(2)">
+        <img src="https://images.pexels.com/photos/2923595/pexels-photo-2923595.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(3)">
+        <img src="https://images.pexels.com/photos/6943110/pexels-photo-6943110.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(4)">
+        <img src="https://images.pexels.com/photos/3868552/pexels-photo-3868552.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(5)">
+        <img src="https://images.pexels.com/photos/4058530/pexels-photo-4058530.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(6)">
+        <img src="https://images.pexels.com/photos/1603650/pexels-photo-1603650.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(7)">
+        <img src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(8)">
+        <img src="https://images.pexels.com/photos/1909572/pexels-photo-1909572.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(9)">
+        <img src="https://images.pexels.com/photos/3454270/pexels-photo-3454270.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(10)">
+        <img src="https://images.pexels.com/photos/5689657/pexels-photo-5689657.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(11)">
+        <img src="https://images.pexels.com/photos/1730382/pexels-photo-1730382.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(12)">
+        <img src="https://images.pexels.com/photos/9899929/pexels-photo-9899929.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(13)">
+        <img src="https://images.pexels.com/photos/1693085/pexels-photo-1693085.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(14)">
+        <img src="https://images.pexels.com/photos/3689772/pexels-photo-3689772.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(15)">
+        <img src="https://images.pexels.com/photos/2113566/pexels-photo-2113566.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(16)">
+        <img src="https://images.pexels.com/photos/4406222/pexels-photo-4406222.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" onclick="openmodal(17)">
+
+      
+    </div>
+    
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&#10007;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="lake-8763490.jpg" alt="Modal Image">
+         
+
+            <button class="prev" onclick="prevImage()">&#10092;</button>
+            <button class="next" onclick="nextImage()">&#10093;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
